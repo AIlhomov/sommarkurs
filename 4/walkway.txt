@@ -1,0 +1,6 @@
+Jag läste igenom Trapezoid Walkway och insåg att det handlar om att hitta den billigaste vägen från en startbredd till en slutbredd, 
+där varje "Trapezoid" fungerar som en kant med kostnad i en graf. 
+Jag försökte först med en rekursiv DFS-lösning som fungerade för testfallen, 
+men den blev för långsam vid större indata. 
+Problemet tror jag lämpar sig bättre för Dijkstra’s algoritm eftersom det egentligen är en klassisk kortaste-väg-uppgift i en viktad graf. 
+Jag hann dock inte implementera den lösningen fullt ut.

@@ -1,0 +1,5 @@
+Jag försökte lösa problemet "Going to School". Jag implementerade en simuleringsbaserad lösning där jag spårade vilken sida av gatan Cissi befann sig på, och vid varje korsning fattade beslut om hon behövde korsa huvudgatan eller inte. 
+Denna lösning klarade de "sample exempelfallen", men föll på de "secret testfallen".
+Problemet verkar kunna lösas med en greedy eller simuleringsstrategi, men efter att ha kollat på det närmare insåg jag att det har en dp - karaktär. Eftersom det kan finnas flera möjliga vägar framåt, där olika val tidigare påverkar kostnaden senare, kan det vara nödvändigt att minimera antalet vägkorsningar genom att komma ihåg tidigare tillstånd. 
+Jag började utforska detta, men hann inte implementera en fullständig DP-lösning.
+Jag tror att en optimal lösning behöver använda DP där man för varje korsning lagrar det lägsta antalet korsningar för att nå dit från både norr- och sydsidan, och vid varje steg uppdaterar dessa baserat på kostnaden att byta sida eller stanna kvar.
