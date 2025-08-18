@@ -1,0 +1,1 @@
+print((lambda a:a[0]+a[1])(sorted(map(int,(input(),input())[1].split()))))
